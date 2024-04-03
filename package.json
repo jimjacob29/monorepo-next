@@ -1,0 +1,24 @@
+{
+	"name": "next-mono",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"private": true,
+	"scripts": {
+		"dev": "turbo run dev --parallel",
+		"lint": "turbo run lint",
+		"format": "turbo run format"
+	},
+	"workspaces": [
+		"apps/*",
+		"packages/config/*",
+		"packages/shared/*"
+	],
+	"engines": {
+		"node": ">=14.0.0"
+	},
+	"packageManager": "yarn@1.22.17",
+	"devDependencies": {
+		"turborepo": "^0.0.1"
+	}
+}
